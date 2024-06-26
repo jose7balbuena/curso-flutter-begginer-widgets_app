@@ -70,7 +70,6 @@ class _CustumListTile extends StatelessWidget {
         // Navigator.pushNamed(context, menuItem.url);
 
          context.push(menuItem.url);
-        // context.pushNamed(CardsScreens.name);
       },
     );
   }

@@ -58,8 +58,8 @@ class _ButtonsView extends StatelessWidget {
               IconButton(onPressed: () {}, 
               icon: const Icon(Icons.app_registration_outlined),
               style: ButtonStyle(
-                backgroundColor: MaterialStatePropertyAll(color.primary),
-                iconColor: MaterialStatePropertyAll(Colors.white)
+                backgroundColor: WidgetStatePropertyAll(color.primary),
+                iconColor: const WidgetStatePropertyAll(Colors.white),
               ),),
 
               
@@ -83,8 +83,8 @@ final colors = Theme.of(context).colorScheme;
         color: colors.primary,
         child: InkWell(
           onTap: () {},
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+          child: const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
             child: Text('hola Mundo', style: TextStyle(color: Colors.white),),
           ),
         ),
