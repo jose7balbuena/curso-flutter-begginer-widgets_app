@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/theme/menu/menu_items.dart';
+import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
+
+  static const String name = 'home_screen';
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +68,9 @@ class _CustumListTile extends StatelessWidget {
         // );
 
         // Navigator.pushNamed(context, menuItem.url);
-        context.push(menuItem.url);
+
+         context.push(menuItem.url);
+        // context.pushNamed(CardsScreens.name);
       },
     );
   }
