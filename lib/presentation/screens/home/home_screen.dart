@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/theme/menu/menu_items.dart';
-import 'package:widgets_app/presentation/screens/buttons/buttons_Screens.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -64,7 +64,8 @@ class _CustumListTile extends StatelessWidget {
         //   ),
         // );
 
-        Navigator.pushNamed(context, menuItem.url);
+        // Navigator.pushNamed(context, menuItem.url);
+        context.push(menuItem.url);
       },
     );
   }
