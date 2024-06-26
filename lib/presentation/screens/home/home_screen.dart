@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:widgets_app/config/theme/menu/menu_items.dart';
-import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -14,15 +13,13 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Flutter + Material 3'),
       ),
-      body: _HomeView(),
+      body: const _HomeView(),
     );
   }
 }
 
 class _HomeView extends StatelessWidget {
-  const _HomeView({
-    super.key,
-  });
+  const _HomeView();
 
   @override
   Widget build(BuildContext context) {
