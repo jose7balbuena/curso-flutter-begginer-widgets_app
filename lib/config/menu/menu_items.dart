@@ -33,5 +33,7 @@ const appMenuItems = <MenuItems>[
   MenuItems(title: 'Introducción a la aplicación', subtitle: 'Pequeño tutorial introductorio', url: '/app_tutorial', icon: Icons.accessible_rounded),  
 
   MenuItems(title: 'InfiniteScroll y Pull', subtitle: 'Listas infinitas y pull to refresh', url: '/infinite_scroll', icon: Icons.list_alt_outlined),  
+
+  MenuItems(title: 'Change Theme', subtitle: 'Cambiar tema de la aplicación', url: '/theme-changer', icon: Icons.color_lens_outlined),  
   
   ];
